@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:markdown_parser/models/markdown_format.dart';
 
-class CodeTextInline extends MarkdownFormat {
+class CodeTextInline extends MarkdownText {
   final String codeText;
   CodeTextInline({
     required this.codeText,

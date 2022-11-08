@@ -4,17 +4,17 @@ import 'package:flutter/foundation.dart';
 class ListItems {
   final int indentLevel;
   final List<String> text;
-  // next sets of list item with an extra indent
-  final List<ListItems>? nextListitem;
+  // next sets of nested list item with an extra indent
+  final List<ListItems>? nestedListitems;
   ListItems({
     required this.indentLevel,
     required this.text,
-    this.nextListitem,
+    this.nestedListitems,
   });
 
   @override
   String toString() =>
-      'ListItems(indentLevel: $indentLevel, text: $text, nextListitem: $nextListitem)';
+      'ListItems(indentLevel: $indentLevel, text: $text, nestedListitems: $nestedListitems)';
 
   @override
   bool operator ==(covariant ListItems other) {
@@ -22,10 +22,10 @@ class ListItems {
 
     return other.indentLevel == indentLevel &&
         listEquals(other.text, text) &&
-        listEquals(other.nextListitem, nextListitem);
+        listEquals(other.nestedListitems, nestedListitems);
   }
 
   @override
   int get hashCode =>
-      indentLevel.hashCode ^ text.hashCode ^ nextListitem.hashCode;
+      indentLevel.hashCode ^ text.hashCode ^ nestedListitems.hashCode;
 }
