@@ -6,7 +6,8 @@ enum MarkdownTextStyle {
   boldAndItalic,
   subScript,
   superScript,
-  code,
+  codeInline,
+  codeBlock,
   link,
   none,
 }

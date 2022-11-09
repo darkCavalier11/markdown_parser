@@ -2,26 +2,26 @@
 import 'package:markdown_parser/models/markdown_format.dart';
 
 class TaskList {
-  final MarkdownText markdownText;
+  final MarkdownGenericText markdownGenericText;
   final TaskStatus taskStatus;
   TaskList({
-    required this.markdownText,
+    required this.markdownGenericText,
     required this.taskStatus,
   });
 
   @override
   String toString() =>
-      'TaskList(markdownText: $markdownText, taskStatus: $taskStatus)';
+      'TaskList(markdownGenericText: $markdownGenericText, taskStatus: $taskStatus)';
 
   @override
   bool operator ==(covariant TaskList other) {
     if (identical(this, other)) return true;
 
-    return other.markdownText == markdownText && other.taskStatus == taskStatus;
+    return other.markdownGenericText == markdownGenericText && other.taskStatus == taskStatus;
   }
 
   @override
-  int get hashCode => markdownText.hashCode ^ taskStatus.hashCode;
+  int get hashCode => markdownGenericText.hashCode ^ taskStatus.hashCode;
 }
 
 enum TaskStatus {

@@ -2,7 +2,7 @@
 import 'package:markdown_parser/models/markdown_format.dart';
 import 'package:markdown_parser/models/markdown_text_styles/markdown_text_styles.dart';
 
-class CodeTextInline implements MarkdownText {
+class CodeTextInline implements MarkdownGenericText {
   final String codeText;
   CodeTextInline({
     required this.codeText,
@@ -22,5 +22,5 @@ class CodeTextInline implements MarkdownText {
   int get hashCode => codeText.hashCode;
 
   @override
-  MarkdownTextStyle markdownTextStyle = MarkdownTextStyle.code;
+  MarkdownTextStyle markdownTextStyle = MarkdownTextStyle.codeInline;
 }

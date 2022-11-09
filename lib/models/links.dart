@@ -2,7 +2,7 @@
 import 'package:markdown_parser/models/markdown_format.dart';
 import 'package:markdown_parser/models/markdown_text_styles/markdown_text_styles.dart';
 
-class Links implements MarkdownText {
+class Links implements MarkdownGenericText {
   final String title;
   final String url;
   Links({

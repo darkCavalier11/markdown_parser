@@ -2,8 +2,8 @@ import 'package:markdown_parser/models/markdown_text_styles/markdown_text_styles
 
 abstract class MarkdownFormat {}
 
-// markdown text are regular text that could be shown any where
+// markdown generic text are regular text that could be shown any where
 // like normal text, links, inline code texts.
-abstract class MarkdownText {
+abstract class MarkdownGenericText {
   MarkdownTextStyle markdownTextStyle = MarkdownTextStyle.none;
 }
