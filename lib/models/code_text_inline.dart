@@ -1,7 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:markdown_parser/models/markdown_format.dart';
+import 'package:markdown_parser/models/markdown_text_styles/markdown_text_styles.dart';
 
-class CodeTextInline extends MarkdownText {
+class CodeTextInline implements MarkdownText {
   final String codeText;
   CodeTextInline({
     required this.codeText,
@@ -19,4 +20,7 @@ class CodeTextInline extends MarkdownText {
 
   @override
   int get hashCode => codeText.hashCode;
+
+  @override
+  MarkdownTextStyle markdownTextStyle = MarkdownTextStyle.code;
 }

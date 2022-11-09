@@ -1,7 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:markdown_parser/models/markdown_format.dart';
+import 'package:markdown_parser/models/markdown_text_styles/markdown_text_styles.dart';
 
-class Links extends MarkdownText {
+class Links implements MarkdownText {
   final String title;
   final String url;
   Links({
@@ -21,4 +22,7 @@ class Links extends MarkdownText {
 
   @override
   String toString() => 'Links(title: $title, url: $url)';
+
+  @override
+  MarkdownTextStyle markdownTextStyle = MarkdownTextStyle.link;
 }

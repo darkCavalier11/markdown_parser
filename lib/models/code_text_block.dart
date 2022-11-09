@@ -1,7 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:markdown_parser/models/markdown_format.dart';
+import 'package:markdown_parser/models/markdown_text_styles/markdown_text_styles.dart';
 
-class CodeTextBlock {
+class CodeTextBlock implements MarkdownText {
   final String? programmingLang;
   final String codeText;
   CodeTextBlock({
@@ -23,4 +24,7 @@ class CodeTextBlock {
   @override
   String toString() =>
       'CodeTextBlock(programmingLang: $programmingLang, codeText: $codeText)';
+
+  @override
+  MarkdownTextStyle markdownTextStyle = MarkdownTextStyle.code;
 }

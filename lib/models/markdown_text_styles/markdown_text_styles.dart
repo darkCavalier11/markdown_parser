@@ -1,4 +1,4 @@
-enum MarkdownTextStyles {
+enum MarkdownTextStyle {
   bold,
   italic,
   strikeThrough,
