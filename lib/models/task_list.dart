@@ -17,7 +17,8 @@ class TaskList {
   bool operator ==(covariant TaskList other) {
     if (identical(this, other)) return true;
 
-    return other.markdownGenericText == markdownGenericText && other.taskStatus == taskStatus;
+    return other.markdownGenericText == markdownGenericText &&
+        other.taskStatus == taskStatus;
   }
 
   @override
