@@ -9,5 +9,6 @@ enum MarkdownTextStyle {
   codeInline,
   codeBlock,
   link,
+  tag,
   none,
 }
