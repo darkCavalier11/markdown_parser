@@ -2,7 +2,7 @@
 import 'package:markdown_parser/models/markdown_format.dart';
 import 'package:markdown_parser/models/markdown_text_styles/markdown_text_styles.dart';
 
-class CodeTextBlock implements MarkdownGenericText {
+class CodeTextBlock {
   final String? programmingLang;
   final String codeText;
   CodeTextBlock({
@@ -24,7 +24,4 @@ class CodeTextBlock implements MarkdownGenericText {
   @override
   String toString() =>
       'CodeTextBlock(programmingLang: $programmingLang, codeText: $codeText)';
-
-  @override
-  MarkdownTextStyle markdownTextStyle = MarkdownTextStyle.codeBlock;
 }
