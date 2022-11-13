@@ -9,3 +9,5 @@ These models encompasses all the different sets of text formatting possible with
 - task lists
 - text quote
 - list items
+
+text -> token -> parsing(ast) -> rendering
