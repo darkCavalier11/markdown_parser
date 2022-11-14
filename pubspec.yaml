@@ -1,7 +1,7 @@
 name: markdown_parser
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://pub.dev
 
 environment:
   sdk: '>=2.18.4 <3.0.0'
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  markdown: ^6.0.1
 
 dev_dependencies:
   flutter_test:
