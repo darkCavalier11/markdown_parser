@@ -2,6 +2,7 @@
 library markdown_parser;
 
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:markdown/markdown.dart';
 import 'package:markdown_parser/models/markdown_format.dart';

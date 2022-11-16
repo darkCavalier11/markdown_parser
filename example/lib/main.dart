@@ -34,8 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
-    print(
-        MarkdownParser.getMarkdownElements("""# Hello `Hello`\n ## comeon"""));
+    print(MarkdownParser.getMarkdownElements("""# Hello `Hello` ## comeon"""));
   }
 
   @override
